@@ -137,5 +137,3 @@ export FZF_DEFAULT_COMMAND='rg --files'
 
 # To make use of "Z"
 . ~/z.sh
-
-# This is a test to see if anything changes
