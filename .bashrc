@@ -54,7 +54,7 @@ fi
 if [ "$color_prompt" = yes ]; then
 # 	 This is a copy of the default setting. In case I forget about it.
 #    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-# To set prompt to a rabbit & just the working directory (used a "W") -------------------|
+# To set prompt to a rabbit & just the working directory (used a "W") ------------------¬
     PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]🐇\[\033[00m\] \[\033[01;34m\]\W\[\033[00m\]\$ '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
