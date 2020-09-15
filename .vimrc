@@ -71,8 +71,6 @@ nnoremap <Up>				:resize +2<CR>
 nnoremap <Down>			:resize -2<CR>
 nnoremap <Left>			:vertical resize +2<CR>
 nnoremap <Right>		:vertical resize -2<CR>
-" Remap delete word in Insert mode to Ctrl-y
-imap <C-y> <C-w> 
 " Remamp the autocompletion function to Ctrl + p (Insert Mode Only)
 imap <C-p> <C-x><C-o>
 " To insert the current date using Ctrl + d

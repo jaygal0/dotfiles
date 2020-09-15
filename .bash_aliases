@@ -13,6 +13,9 @@ alias scron='sudo service cron start'
 alias clip='clip.exe'
 alias exp='explorer.exe'
 
+# to exit a window using Vim bindings
+alias :q="exit"
+
 # to open the vision board
 alias vis='cd /mnt/c/Users/joshu/Dropbox/anteckningsbok/goals/ && explorer.exe visionBoard2020.jpg'
 
