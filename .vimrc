@@ -13,7 +13,7 @@ Plugin 'junegunn/goyo.vim' 									" Distraction-free writing in vim
 Plugin 'mattn/emmet-vim' 										" Emmet syntax
 Plugin 'plasticboy/vim-markdown'						" Syntax on markdown code fence
 Plugin 'preservim/nerdtree' 								" Nerdtree navigation
-Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'tpope/vim-fugitive'
 Plugin 'yuttie/comfortable-motion.vim'			" Smooth scrolling
 Plugin 'matchit.zip'												" Search matching characters and code
@@ -52,13 +52,15 @@ set omnifunc=htmlcomplete#CompleteTags		" HTML autocompletion
 "      :lmap  :lnoremap :lunmap    Insert, Command-line, Lang-Arg
 "      :cmap  :cnoremap :cunmap    Command-line
 "
+" To disable the Ctrl+e binding to nothing
+inoremap <C-e> <Nop>
 " Remap t+y to open the todo list
 nnoremap ty :vs ../../Dropbox/anteckningsbok/todo/toDo.md<CR>
 " Remap NERDTree Toggle to Ctrl + n
 nnoremap <C-t> :NERDTreeToggle<CR>
 " Toggle :set wrap with "Tab"
  nnoremap <Tab> :set wrap!<CR>
-" Remap tabs activate with "f"
+" Remap tabs activate with "t"
 nnoremap tn :tabnew<Space> 
 nnoremap tk :tabnext<CR>
 nnoremap tj :tabprev<CR>
