@@ -13,7 +13,6 @@ Plugin 'junegunn/goyo.vim' 									" Distraction-free writing in vim
 Plugin 'mattn/emmet-vim' 										" Emmet syntax
 Plugin 'plasticboy/vim-markdown'						" Syntax on markdown code fence
 Plugin 'preservim/nerdtree' 								" Nerdtree navigation
-" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'tpope/vim-fugitive'
 Plugin 'yuttie/comfortable-motion.vim'			" Smooth scrolling
 Plugin 'matchit.zip'												" Search matching characters and code
@@ -21,6 +20,7 @@ Plugin 'luochen1990/rainbow'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 Plugin 'tpope/vim-surround'									" Surround words with special characters easily
+" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 call vundle#end()            " required
 filetype plugin indent on    " required
 " 
