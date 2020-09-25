@@ -28,7 +28,7 @@ alias 2ye='explorer.exe $(date +%Y%m%d -d "-2 year")*; echo $(date +%Y%m%d -d "-
 # to cat files
 alias cgo='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/goals/2020Goals.md'
 alias cin='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/todo/inbox.md'
-alias cmo='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/general/cMorningRoutines.md'
+alias cmo='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/general/morningRoutinesChecklist.md'
 alias cpr='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/todo/projects.md'
 alias cso='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/todo/someday.md'
 alias cto='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/todo/toDo.md'
