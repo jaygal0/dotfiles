@@ -26,6 +26,8 @@ alias yea='explorer.exe $(date +%Y%m%d -d "-1 year")*; echo $(date +%Y%m%d -d "-
 alias 2ye='explorer.exe $(date +%Y%m%d -d "-2 year")*; echo $(date +%Y%m%d -d "-2 year")* | clip.exe'
 
 # to cat files
+alias sch='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/general/schedule.md'
+alias wor='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/general/workoutSchedule.md'
 alias cgo='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/goals/2020Goals.md'
 alias cin='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/todo/inbox.md'
 alias cmo='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/general/morningRoutinesChecklist.md'
@@ -56,3 +58,5 @@ alias vto='vim /mnt/c/Users/joshu/Dropbox/anteckningsbok/todo/toDo.md'
 alias vvi='vim ~/.vimrc'
 alias vwa='vim /mnt/c/Users/joshu/Dropbox/anteckningsbok/todo/waitingFor.md'
 
+# Bitwarden shortcuts
+alias thunder='bw get password thunderbird | clip'
