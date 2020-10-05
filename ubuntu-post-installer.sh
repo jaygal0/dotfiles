@@ -7,7 +7,7 @@
 # sudo bash ubuntu-post-installer.sh   
 #
 # apt
-sudo apt install firefox git jpegoptim ripgrep thunderbird tmux tree vlc gimp inkscape bleachbit -y 
+sudo apt install firefox git jpegoptim ripgrep thunderbird tmux tree vlc gimp inkscape bleachbit ffmpeg -y 
 # snaps
 sudo snap install atom --classic
 sudo snap install obs-studio
