@@ -24,6 +24,9 @@ alias mon='explorer.exe $(date +%Y%m%d -d "-1 month")*; echo $(date +%Y%m%d -d "
 alias wee='explorer.exe $(date +%Y%m%d -d "-7 days")*; echo $(date +%Y%m%d -d "-7 days")* | clip.exe'
 alias yea='explorer.exe $(date +%Y%m%d -d "-1 year")*; echo $(date +%Y%m%d -d "-1 year")* | clip.exe'
 alias 2ye='explorer.exe $(date +%Y%m%d -d "-2 year")*; echo $(date +%Y%m%d -d "-2 year")* | clip.exe'
+alias 3ye='explorer.exe $(date +%Y%m%d -d "-3 year")*; echo $(date +%Y%m%d -d "-3 year")* | clip.exe'
+alias 4ye='explorer.exe $(date +%Y%m%d -d "-4 year")*; echo $(date +%Y%m%d -d "-4 year")* | clip.exe'
+alias 5ye='explorer.exe $(date +%Y%m%d -d "-5 year")*; echo $(date +%Y%m%d -d "-5 year")* | clip.exe'
 
 # to cat files
 alias cgo='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/goals/2020Goals.md'
@@ -41,6 +44,9 @@ alias 1m='cat $(date +%Y%m%d -d "-1 month")*'
 alias 1w='cat $(date +%Y%m%d -d "-7 days")*'
 alias 1y='cat $(date +%Y%m%d -d "-1 year")*'
 alias 2y='cat $(date +%Y%m%d -d "-2 year")*'
+alias 3y='cat $(date +%Y%m%d -d "-3 year")*'
+alias 4y='cat $(date +%Y%m%d -d "-4 year")*'
+alias 5y='cat $(date +%Y%m%d -d "-5 year")*'
 
 # to create a new journal and idea file
 alias vjo='cd /mnt/c/Users/joshu/Documents/journal && new'

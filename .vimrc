@@ -60,7 +60,7 @@ nnoremap ty :vs ../../Dropbox/anteckningsbok/todo/toDo.md<CR>
 " Remap NERDTree Toggle to Ctrl + t
 nnoremap <C-t> :NERDTreeToggle<CR>
 " Toggle :set wrap with "Tab"
- nnoremap <Tab> :set wrap!<CR>
+nnoremap <Tab> :set wrap!<CR>
 " Remap tabs activate with "t"
 nnoremap tn :tabnew<Space> 
 nnoremap tk :tabnext<CR>
@@ -78,6 +78,8 @@ nnoremap <Right>		:vertical resize -6<CR>
 imap <C-p> <C-x><C-o>
 " To insert the current date using Ctrl + d
 imap <C-d> <C-r>=strftime('%F')<CR>
+" To start a new journal/idea
+map == <S-Tab><S-a><C-d><Esc>jja<Space>
 " Remap "switch pane navigation" on vim
 map <C-j> <C-W>j
 map <C-k> <C-W>k
@@ -118,6 +120,7 @@ set splitright					" Make vim window split natural
 set tabstop=2						" To set the tab space by 2 rather than the defuault 4
 set nowrap
 set autochdir						" Automatically change working directory to the current file
+set autoread
 syntax on
 "
 " ------------------------------
