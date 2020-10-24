@@ -39,14 +39,23 @@ alias cwa='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/todo/waitingFor.md'
 alias sch='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/general/schedule.md'
 alias wor='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/general/workoutSchedule.md'
 
+# to vim journal from 1 week, 1 month & etc ...
+alias 1wj='vim $(date +%Y%m%d -d "-7 days")* -c "Goyo"'
+alias 1mj='vim $(date +%Y%m%d -d "-1 month")* -c "Goyo"'
+alias 1yj='vim $(date +%Y%m%d -d "-1 year")* -c "Goyo"'
+alias 2yj='vim $(date +%Y%m%d -d "-2 year")* -c "Goyo"'
+alias 3yj='vim $(date +%Y%m%d -d "-3 year")* -c "Goyo"'
+alias 4yj='vim $(date +%Y%m%d -d "-4 year")* -c "Goyo"'
+alias 5yj='vim $(date +%Y%m%d -d "-5 year")* -c "Goyo"'
+
 # to cat ideas from 1 week, 1 month & 1 year
-alias 1m='cat $(date +%Y%m%d -d "-1 month")*'
-alias 1w='cat $(date +%Y%m%d -d "-7 days")*'
-alias 1y='cat $(date +%Y%m%d -d "-1 year")*'
-alias 2y='cat $(date +%Y%m%d -d "-2 year")*'
-alias 3y='cat $(date +%Y%m%d -d "-3 year")*'
-alias 4y='cat $(date +%Y%m%d -d "-4 year")*'
-alias 5y='cat $(date +%Y%m%d -d "-5 year")*'
+alias 1wi='cat $(date +%Y%m%d -d "-7 days")*'
+alias 1mi='cat $(date +%Y%m%d -d "-1 month")*'
+alias 1yi='cat $(date +%Y%m%d -d "-1 year")*'
+alias 2yi='cat $(date +%Y%m%d -d "-2 year")*'
+alias 3yi='cat $(date +%Y%m%d -d "-3 year")*'
+alias 4yi='cat $(date +%Y%m%d -d "-4 year")*'
+alias 5yi='cat $(date +%Y%m%d -d "-5 year")*'
 
 # to create a new journal and idea file
 alias vjo='cd /mnt/c/Users/joshu/Documents/journal && new'
