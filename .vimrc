@@ -55,6 +55,8 @@ set omnifunc=htmlcomplete#CompleteTags		" HTML autocompletion
 "
 " To disable the Ctrl+e binding to nothing
 inoremap <C-e> <Nop>
+" To disable the Shift + F2 binding to do nothing
+nnoremap Q <Nop>
 " Remap t+y to open the todo list
 nnoremap ty :vs ../../Dropbox/anteckningsbok/todo/toDo.md<CR>
 " Remap NERDTree Toggle to Ctrl + t
