@@ -29,7 +29,7 @@ alias 4ye='explorer.exe $(date +%Y%m%d -d "-4 year")*; echo $(date +%Y%m%d -d "-
 alias 5ye='explorer.exe $(date +%Y%m%d -d "-5 year")*; echo $(date +%Y%m%d -d "-5 year")* | clip.exe'
 
 # to cat files
-alias cgo='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/goals/2020Goals.md'
+alias cgo='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/goals/2021Goals.md'
 alias cin='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/todo/inbox.md'
 alias cmo='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/general/morningRoutinesChecklist.md'
 alias cpr='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/todo/projects.md'
@@ -65,7 +65,7 @@ alias vid='cd /mnt/c/Users/joshu/Dropbox/anteckningsbok/ideas && new'
 alias ali='vim ~/.bash_aliases'
 alias end='vim -S /mnt/c/Users/joshu/Dropbox/anteckningsbok/todo/gtd.vim'
 alias vba='vim ~/.bashrc'
-alias vgo='vim /mnt/c/Users/joshu/Dropbox/anteckningsbok/goals/2020Goals.md'
+alias vgo='vim /mnt/c/Users/joshu/Dropbox/anteckningsbok/goals/2021Goals.md'
 alias vin='vim /mnt/c/Users/joshu/Dropbox/anteckningsbok/todo/inbox.md'
 alias vpr='vim /mnt/c/Users/joshu/Dropbox/anteckningsbok/todo/projects.md'
 alias vso='vim /mnt/c/Users/joshu/Dropbox/anteckningsbok/todo/someday.md'
