@@ -17,7 +17,7 @@ alias exp='explorer.exe'
 alias :q="exit"
 
 # to open the vision board
-alias vis='cd /mnt/c/Users/joshu/Dropbox/anteckningsbok/goals/ && explorer.exe visionBoard2020.jpg'
+alias vis='cd /mnt/c/Users/joshu/Dropbox/anteckningsbok/goals/ && explorer.exe visionBoard2021.jpg'
 
 # to open photos & copy them to the clipboad
 alias mon='explorer.exe $(date +%Y%m%d -d "-1 month")*; echo $(date +%Y%m%d -d "-1 month")* | clip.exe'
@@ -37,7 +37,7 @@ alias cso='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/todo/someday.md'
 alias cto='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/todo/toDo.md'
 alias cwa='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/todo/waitingFor.md'
 alias sch='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/general/schedule.md'
-alias wor='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/general/workoutSchedule.md'
+alias wor='cat /mnt/c/Users/joshu/Dropbox/anteckningsbok/workouts/workoutSchedule.md'
 
 # to vim journal from 1 week, 1 month & etc ...
 alias 1wj='vim $(date +%Y%m%d -d "-7 days")* -c "Goyo"'
@@ -75,3 +75,11 @@ alias vwa='vim /mnt/c/Users/joshu/Dropbox/anteckningsbok/todo/waitingFor.md'
 
 # Bitwarden shortcuts
 alias thunder='bw get password thunderbird | clip'
+
+# Scripts
+alias compress='~/compress.sh'
+alias transfer='~/transfer.sh'
+alias backup='~/backup.sh'
+
+# To access Workout static hold document
+alias sta='vim /mnt/c/Users/joshu/Dropbox/anteckningsbok/workouts/staticHoldsJournal.md'
