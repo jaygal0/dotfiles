@@ -4,7 +4,6 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim' " required
-Plugin 'arcticicestudio/nord-vim', { 'branch': 'develop' }
 Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'godlygeek/tabular'									" Tabulate headers
 Plugin 'jiangmiao/auto-pairs'								" Auto pair brackets and etc...
@@ -109,7 +108,6 @@ let g:rainbow_active = 0
 " ------------------------------
 " --- OTHER ---
 " ------------------------------
-colorscheme nord 				" Nord colourscheme
 set hlsearch						" To highlight words during the search
 set incsearch						" Incremental search feature
 set ignorecase					" Searches all words no matter of case
