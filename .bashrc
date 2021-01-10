@@ -137,3 +137,6 @@ export FZF_DEFAULT_COMMAND='rg --files'
 
 # To make use of "Z"
 . ~/z.sh
+
+# to use config for the dotfiles repo
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
