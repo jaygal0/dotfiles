@@ -60,8 +60,9 @@ alias 5yi='cat $(date +%Y%m%d -d "-5 year")*'
 # to access the password, decrypt and create a new journal file
 alias vjo='bw get password dagbok | clip && ~/journal-decrypt.sh && cd /mnt/c/Users/josh/Documents/dagbok/journal && new'
 
-# to encrypt the journal folder
+# to decrypt & encrypt the journal folder
 alias ejo='~/journal-encrypt.sh'
+alias djo='~/journal-decrypt.sh'
 
 # to create a new idea file
 alias vid='cd /mnt/c/Users/josh/Dropbox/anteckningsbok/ideas && new'
