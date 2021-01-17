@@ -57,8 +57,13 @@ alias 3yi='cat $(date +%Y%m%d -d "-3 year")*'
 alias 4yi='cat $(date +%Y%m%d -d "-4 year")*'
 alias 5yi='cat $(date +%Y%m%d -d "-5 year")*'
 
-# to create a new journal and idea file
-alias vjo='cd /mnt/c/Users/josh/Documents/journal && new'
+# to access the password, decrypt and create a new journal file
+alias vjo='bw get password dagbok | clip && ~/journal-decrypt.sh && cd /mnt/c/Users/josh/Documents/dagbok/journal && new'
+
+# to encrypt the journal folder
+alias ejo='~/journal-encrypt.sh'
+
+# to create a new idea file
 alias vid='cd /mnt/c/Users/josh/Dropbox/anteckningsbok/ideas && new'
 
 # to edit files
@@ -75,6 +80,7 @@ alias vwa='vim /mnt/c/Users/josh/Dropbox/anteckningsbok/todo/waitingFor.md'
 
 # Bitwarden shortcuts
 alias thunder='bw get password thunderbird | clip'
+alias netflix='bw get username d30f628c-231b-486e-9137-aba700f949c7 | clip && bw get password d30f628c-231b-486e-9137-aba700f949c7 | clip'
 
 # Scripts
 alias compress='~/compress.sh'
@@ -83,3 +89,6 @@ alias backup='~/backup.sh'
 
 # To access Workout static hold document
 alias sta='vim /mnt/c/Users/josh/Dropbox/anteckningsbok/workouts/staticHoldsJournal.md'
+
+# To access jobApplicationList.md quickly
+alias job='vim /mnt/c/Users/josh/Documents/inboxFiles/application/md/jobApplicationList.md'
