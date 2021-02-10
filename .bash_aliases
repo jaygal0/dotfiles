@@ -19,14 +19,14 @@ alias :q="exit"
 # to open the vision board
 alias vis='cd /mnt/c/Users/josh/Dropbox/anteckningsbok/goals/ && explorer.exe visionBoard2021.jpg'
 
-# to open photos & copy them to the clipboad
-alias mon='explorer.exe $(date +%Y%m%d -d "-1 month")*; echo $(date +%Y%m%d -d "-1 month")* | clip.exe'
-alias wee='explorer.exe $(date +%Y%m%d -d "-7 days")*; echo $(date +%Y%m%d -d "-7 days")* | clip.exe'
-alias yea='explorer.exe $(date +%Y%m%d -d "-1 year")*; echo $(date +%Y%m%d -d "-1 year")* | clip.exe'
-alias 2ye='explorer.exe $(date +%Y%m%d -d "-2 year")*; echo $(date +%Y%m%d -d "-2 year")* | clip.exe'
-alias 3ye='explorer.exe $(date +%Y%m%d -d "-3 year")*; echo $(date +%Y%m%d -d "-3 year")* | clip.exe'
-alias 4ye='explorer.exe $(date +%Y%m%d -d "-4 year")*; echo $(date +%Y%m%d -d "-4 year")* | clip.exe'
-alias 5ye='explorer.exe $(date +%Y%m%d -d "-5 year")*; echo $(date +%Y%m%d -d "-5 year")* | clip.exe'
+# to open files according to the date
+alias mon='explorer.exe $(date +%Y%m%d -d "-1 month")*; echo $(date +%Y%m%d -d "-1 month")*' 
+alias wee='explorer.exe $(date +%Y%m%d -d "-7 days")*; echo $(date +%Y%m%d -d "-7 days")*'
+alias yea='explorer.exe $(date +%Y%m%d -d "-1 year")*; echo $(date +%Y%m%d -d "-1 year")*'
+alias 2ye='explorer.exe $(date +%Y%m%d -d "-2 year")*; echo $(date +%Y%m%d -d "-2 year")*'
+alias 3ye='explorer.exe $(date +%Y%m%d -d "-3 year")*; echo $(date +%Y%m%d -d "-3 year")*'
+alias 4ye='explorer.exe $(date +%Y%m%d -d "-4 year")*; echo $(date +%Y%m%d -d "-4 year")*'
+alias 5ye='explorer.exe $(date +%Y%m%d -d "-5 year")*; echo $(date +%Y%m%d -d "-5 year")*'
 
 # to cat files
 alias cgo='cat /mnt/c/Users/josh/Dropbox/anteckningsbok/goals/2021Goals.md'
@@ -39,14 +39,14 @@ alias cwa='cat /mnt/c/Users/josh/Dropbox/anteckningsbok/todo/waitingFor.md'
 alias sch='cat /mnt/c/Users/josh/Dropbox/anteckningsbok/general/schedule.md'
 alias wor='cat /mnt/c/Users/josh/Dropbox/anteckningsbok/workouts/workoutSchedule.md'
 
-# to vim journal from 1 week, 1 month & etc ...
-alias 1wj='vim $(date +%Y%m%d -d "-7 days")* -c "Goyo"'
-alias 1mj='vim $(date +%Y%m%d -d "-1 month")* -c "Goyo"'
-alias 1yj='vim $(date +%Y%m%d -d "-1 year")* -c "Goyo"'
-alias 2yj='vim $(date +%Y%m%d -d "-2 year")* -c "Goyo"'
-alias 3yj='vim $(date +%Y%m%d -d "-3 year")* -c "Goyo"'
-alias 4yj='vim $(date +%Y%m%d -d "-4 year")* -c "Goyo"'
-alias 5yj='vim $(date +%Y%m%d -d "-5 year")* -c "Goyo"'
+# to view photos and journals according to their dates
+alias 1wj='cd ../img; explorer.exe $(date +%Y%m%d -d "-7 days")*; echo $(date +%Y%m%d -d "-7 days")* | clip.exe; cd ../journal; vim $(date +%Y%m%d -d "-7 days")* -c "Goyo"'
+alias 1mj='cd ../img; explorer.exe $(date +%Y%m%d -d "-1 month")*; echo $(date +%Y%m%d -d "-1 month")* | clip.exe; cd ../journal; vim $(date +%Y%m%d -d "-1 month")* -c "Goyo"'
+alias 1yj='cd ../img; explorer.exe $(date +%Y%m%d -d "-1 year")*; echo $(date +%Y%m%d -d "-1 year")* | clip.exe; cd ../journal; vim $(date +%Y%m%d -d "-1 year")* -c "Goyo"'
+alias 2yj='cd ../img; explorer.exe $(date +%Y%m%d -d "-2 year")*; echo $(date +%Y%m%d -d "-2 year")* | clip.exe; cd ../journal; vim $(date +%Y%m%d -d "-2 year")* -c "Goyo"'
+alias 3yj='cd ../img; explorer.exe $(date +%Y%m%d -d "-3 year")*; echo $(date +%Y%m%d -d "-3 year")* | clip.exe; cd ../journal; vim $(date +%Y%m%d -d "-3 year")* -c "Goyo"'
+alias 4yj='cd ../img; explorer.exe $(date +%Y%m%d -d "-4 year")*; echo $(date +%Y%m%d -d "-4 year")* | clip.exe; cd ../journal; vim $(date +%Y%m%d -d "-4 year")* -c "Goyo"'
+alias 5yj='cd ../img; explorer.exe $(date +%Y%m%d -d "-5 year")*; echo $(date +%Y%m%d -d "-5 year")* | clip.exe; cd ../journal; vim $(date +%Y%m%d -d "-5 year")* -c "Goyo"'
 
 # to cat ideas from 1 week, 1 month & 1 year
 alias 1wi='cat $(date +%Y%m%d -d "-7 days")*'
@@ -62,10 +62,14 @@ alias vjo='bw get password dagbok | clip && ~/journal-decrypt.sh && cd /mnt/c/Us
 
 # to decrypt & encrypt the journal folder
 alias ejo='~/journal-encrypt.sh'
-alias djo='~/journal-decrypt.sh'
+alias djo='bw get password dagbok | clip && ~/journal-decrypt.sh'
 
 # to create a new idea file
-alias vid='cd /mnt/c/Users/josh/Dropbox/anteckningsbok/ideas && new'
+alias vid='~/ideas-decrypt.sh && cd /mnt/c/Users/josh/Documents/dagbok/ideas && new'
+
+# to decrypt & encrypt the ideas folder
+alias eid='~/ideas-encrypt.sh'
+alias did='bw get password dagbok | clip && ~/ideas-decrypt.sh'
 
 # to edit files
 alias ali='vim ~/.bash_aliases'
