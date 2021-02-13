@@ -97,3 +97,7 @@ alias sta='vim /mnt/c/Users/josh/Dropbox/anteckningsbok/workouts/staticHoldsJour
 
 # To access jobApplicationList.md quickly
 alias job='vim /mnt/c/Users/josh/Documents/inboxFiles/application/md/jobApplicationList.md'
+
+# Accounts
+alias dac='bw get password "personal accounts" | clip && ~/accounts-move-to-documents.sh && ~/accounts-decrypt.sh'
+alias eac='~/accounts-encrypt.sh && ~/accounts-move-to-dropbox.sh'
