@@ -63,6 +63,7 @@ alias vjo='bw get password dagbok | clip && ~/journal-decrypt.sh && cd /mnt/c/Us
 # to decrypt & encrypt the journal folder
 alias ejo='~/journal-encrypt.sh'
 alias djo='bw get password dagbok | clip && ~/journal-decrypt.sh'
+alias cjo='cd .. && ~/journal-encrypt.sh'
 
 # to create a new idea file
 alias vid='~/ideas-decrypt.sh && cd /mnt/c/Users/josh/Documents/dagbok/ideas && new'
@@ -70,6 +71,7 @@ alias vid='~/ideas-decrypt.sh && cd /mnt/c/Users/josh/Documents/dagbok/ideas && 
 # to decrypt & encrypt the ideas folder
 alias eid='~/ideas-encrypt.sh'
 alias did='bw get password dagbok | clip && ~/ideas-decrypt.sh'
+alias cei='cd .. && ~/ideas-encrypt.sh'
 
 # to edit files
 alias ali='vim ~/.bash_aliases'
