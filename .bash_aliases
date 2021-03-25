@@ -1,4 +1,5 @@
 # place this file /etc/profile.d/
+# this is a test
 
 # to list with long listing & human readable
 alias lls='ls -lh'
