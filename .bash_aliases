@@ -1,5 +1,4 @@
 # place this file /etc/profile.d/
-# this is a test
 
 # to list with long listing & human readable
 alias lls='ls -lh'
@@ -64,7 +63,7 @@ alias vjo='bw get password dagbok | clip && ~/journal-decrypt.sh && cd /mnt/c/Us
 # to decrypt & encrypt the journal folder
 alias ejo='~/journal-encrypt.sh'
 alias djo='bw get password dagbok | clip && ~/journal-decrypt.sh'
-alias cjo='cd .. && ~/journal-encrypt.sh'
+alias cej='cd .. && ~/journal-encrypt.sh'
 
 # to create a new idea file
 alias vid='~/ideas-decrypt.sh && cd /mnt/c/Users/josh/Documents/dagbok/ideas && new'
