@@ -85,21 +85,24 @@ alias vto='vim /mnt/c/Users/josh/Dropbox/anteckningsbok/todo/toDo.md'
 alias vvi='vim ~/.vimrc'
 alias vwa='vim /mnt/c/Users/josh/Dropbox/anteckningsbok/todo/waitingFor.md'
 
-# Bitwarden shortcuts
+# bitwarden shortcuts
 alias thunder='bw get password thunderbird | clip'
 alias netflix='bw get username d30f628c-231b-486e-9137-aba700f949c7 | clip && bw get password d30f628c-231b-486e-9137-aba700f949c7 | clip'
 
-# Scripts
+# scripts
 alias compress='~/compress.sh'
 alias transfer='~/transfer.sh'
 alias backup='~/backup.sh'
 
-# To access Workout static hold document
+# to access Workout static hold document
 alias sta='vim /mnt/c/Users/josh/Dropbox/anteckningsbok/workouts/staticHoldsJournal.md'
 
-# To access jobApplicationList.md quickly
+# to access jobApplicationList.md quickly
 alias job='vim /mnt/c/Users/josh/Documents/inboxFiles/application/md/jobApplicationList.md'
 
-# Accounts
+# accounts
 alias dac='bw get password "personal accounts" | clip && ~/accounts-move-to-documents.sh && ~/accounts-decrypt.sh'
 alias eac='~/accounts-encrypt.sh && ~/accounts-move-to-dropbox.sh'
+
+# to check the weather
+alias sun='curl wttr.in'
