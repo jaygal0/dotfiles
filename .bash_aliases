@@ -106,3 +106,6 @@ alias eac='~/accounts-encrypt.sh && ~/accounts-move-to-dropbox.sh'
 
 # to check the weather
 alias sun='curl wttr.in'
+
+# to update kernel
+alias update='sudo apt update && sudo apt upgrade -y'
